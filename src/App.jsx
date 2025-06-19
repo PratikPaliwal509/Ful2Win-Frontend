@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ErrorBoundary from './components/ErrorBoundary';
 import Community from './pages/Community';
 import Games from './pages/Games'
+import GamingLoginMobile from './pages/SignUp'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<GamingLoginMobile />} />
             <Route path="/tournaments" element={<Tournaments />} />
             <Route path="/games" element={<Games />} />
             <Route path="/profile" element={<ProfileScreen/>} />
